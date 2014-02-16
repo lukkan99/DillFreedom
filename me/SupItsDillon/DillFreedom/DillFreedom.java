@@ -46,6 +46,11 @@ public class DillFreedom extends JavaPlugin{
                         user.setFoodLevel(20);}
                         else{
                                 player.sendMessage(ChatColor.DARK_RED+"/FeedMe <player>");
+                        }       
+                }                
+                 else if(cmd.getName().equalsIgnoreCase("df-lol")){
+                        player.sendMessage("Welp. You've done goof'd.");
+                        user.setHealth(0);}
                         }
                 }
                 return true;
