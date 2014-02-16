@@ -16,7 +16,7 @@ public class PlayerListener implements Listener{
        
         @EventHandler(priority = EventPriority.HIGHEST)
         public void onPlayerJoin(PlayerJoinEvent e){
-                e.getPlayer().sendMessage(ChatColor.DARK_BLUE+"Welcome to my server!");
+                e.getPlayer().sendMessage(ChatColor.DARK_BLUE+"Welcome to the server!");
         }
        
        
