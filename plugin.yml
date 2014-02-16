@@ -1,0 +1,15 @@
+name: DillFreedom
+version: 1
+main: me.SupItsDillon.DillFreedom.DillFreedom
+author: SupItsDillon
+description: An add-on for the FreedomOP server.
+commands:
+    df-help:
+        usage: /df-help
+        description: Help with the plugin
+    HealMe:
+        usage: /Command
+        description: Mobs been hurting you? 
+    FeedMe:
+        usage: /Command
+        description: In the middle of a PVP match? Need to be fed?
