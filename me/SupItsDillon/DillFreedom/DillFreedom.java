@@ -1,5 +1,6 @@
 package me.SupItsDillon.DillFreedom;
 
+import net.pravian.bukkitlib.BukkitLib;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -20,6 +21,7 @@ public class DillFreedom extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        BukkitLib.init(plugin);
         getLogger().info("DillFreedom has been enabled!");
         PluginManager pm = getServer().getPluginManager();
         pm.registerEvents(plugin.playerListener, plugin);
