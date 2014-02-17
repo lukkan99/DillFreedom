@@ -9,14 +9,20 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class DillFreedom extends JavaPlugin {
 
-    private Playerlistener PlayerListener = new Playerlistener(this);
-    private DillFreedom Dill;
+    public PlayerListener playerListener;
+    public DillFreedom plugin;
+
+    @Override
+    public void onLoad() {
+        plugin = this;
+        playerListener = new PlayerListener(plugin);
+    }
 
     @Override
     public void onEnable() {
         getLogger().info("DillFreedom has been enabled!");
         PluginManager pm = getServer().getPluginManager();
-        pm.registerEvents(Dill.PlayerListener, Dill);
+        pm.registerEvents(plugin.playerListener, plugin);
     }
 
     @Override
