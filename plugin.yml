@@ -1,18 +1,21 @@
 name: DillFreedom
-version: 1.1
 main: me.SupItsDillon.DillFreedom.DillFreedom
+version: 1.5 beta
 author: SupItsDillon
-description: An add-on for the FreedomOP server.
+description: An add-on mainly targeted for all-op freedom servers.
+ 
 commands:
-    df-help:
-        usage: /Command
-        description: Help with the plugin
-    df-feed:
-        usage: /Command
-        description: In the middle of a PVP match? Need to be fed?
-    df-heal:
-        usage: /Command
-        description: Have the mobs been hurting you?
-    df-lol:
-        usage: /Command
-        description: Lol.
+  df-help:
+    description: Help for the plugin
+    usage: /<command>
+  df-feed:
+    description: Feeling hungry?
+    usage: /<command> 
+  df-heal:
+    description: In the middle of PvP? About to die?
+    usage: /<command>
+  df-lol:
+    description: One word. Lol.
+    usage: /<command>
+          
+    
