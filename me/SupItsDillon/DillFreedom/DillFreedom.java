@@ -36,7 +36,7 @@ public class DillFreedom extends JavaPlugin {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Player player = (Player) sender;
         if (cmd.getName().equalsIgnoreCase("df-help")) {
-            player.sendMessage("Welcome to DillFreedom! There are many commands in the plugin. To see them all, do /help DillFreedom");
+            player.sendMessage("Welcome to DillFreedom! The plugin is still in the making, but will soon be done!");
         } else if (cmd.getName().equalsIgnoreCase("df-heal")) {
             if (args.length == 1) {
                 Player user = player.getServer().getPlayer(args[0]);
@@ -44,7 +44,8 @@ public class DillFreedom extends JavaPlugin {
                     player.sendMessage("Invalid Player");
                     return true;
                 }
-                user.setHealth(20);
+                user.setHealth(20.0);
+                player.sendMessage(ChatColor.RED + "You are now full!");
             } else {
                 player.sendMessage(ChatColor.DARK_RED + "/df-heal <player>");
             }
@@ -56,6 +57,7 @@ public class DillFreedom extends JavaPlugin {
                     return true;
                 }
                 user.setFoodLevel(20);
+                player.sendMessage(ChatColor.DARK_RED + "Your food levels have suddenly gone up!");
             } else {
                 player.sendMessage(ChatColor.DARK_RED + "/df-feed <player>");
             }
@@ -66,9 +68,8 @@ public class DillFreedom extends JavaPlugin {
                     player.sendMessage("Invalid Player");
                     return true;
                 }
-                user.setHealth(0);
-            } else {
-                player.sendMessage(ChatColor.DARK_RED + "Lol. You dun goof'd!");
+                user.setHealth(0.0);
+                player.sendMessage(ChatColor.DARK_RED + "Lol.");
             }
         }
         return true;
