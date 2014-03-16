@@ -6,17 +6,17 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
  
-public class Playerlistener implements Listener{
+public class PlayerListener implements Listener{
  
         public DillFreedom plugin;
        
-        public Playerlistener(DillFreedom instance){
+        public PlayerListener(DillFreedom instance){
                 plugin = instance;
         }
        
         @EventHandler(priority = EventPriority.HIGHEST)
         public void onPlayerJoin(PlayerJoinEvent e){
-                e.getPlayer().sendMessage(ChatColor.DARK_BLUE+"Welcome to the server!");
+                e.getPlayer().sendMessage(ChatColor.RED+"This server is using DillFreedom!");
         }
        
        
