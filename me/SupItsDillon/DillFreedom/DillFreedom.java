@@ -8,7 +8,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class DillFreedom extends JavaPlugin {
+public class DillFreedom extends BukkitPlugin {
 
     public PlayerListener playerListener;
     public DillFreedom plugin;
