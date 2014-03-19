@@ -19,7 +19,7 @@ public class Command_dfhelp implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Player player = (Player) sender;
         if (cmd.getName().equalsIgnoreCase("df-help")) {
-            player.sendMessage("Welcome to DillFreedom! The plugin is still in the making, but will soon be done!");
+            player.sendMessage("Welcome to DillFreedom! The plugin is still in development, but it is still stable enough to be on servers without it bugging out.");
         } else if (cmd.getName().equalsIgnoreCase("df-heal")) {
             if (args.length == 1) {
                 Player user = player.getServer().getPlayer(args[0]);
