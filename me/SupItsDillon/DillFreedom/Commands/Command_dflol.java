@@ -27,6 +27,8 @@ public class Command_dflol implements CommandExecutor {
                 }
                 user.setHealth(0.0);
                 player.sendMessage(ChatColor.DARK_RED + "Lol.");
+                if (args.length == 2)
+                player.sendMessage(ChatColor.DARK_RED + "Lol.");
            }
         }
         return true;
