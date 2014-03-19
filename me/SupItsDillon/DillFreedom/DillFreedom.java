@@ -10,7 +10,7 @@ import me.SupItsDillon.DillFreedom.Commands.Command_dfhelp;
 import me.SupItsDillon.DillFreedom.Commands.Command_dflol;
 import me.SupItsDillon.DillFreedom.Commands.Command_dfheal;
 
-public class DillFreedom extends JavaPlugin {
+public class DillFreedom extends BukkitPlugin {
 
     public PlayerListener playerListener;
     public DillFreedom plugin;
