@@ -26,9 +26,9 @@ public class Command_dfheal implements CommandExecutor {
                     return true;
                 }
                 user.setHealth(20.0);
-                player.sendMessage(ChatColor.RED + "You are now full!");
+                player.sendMessage(ChatColor.RED + "*burp* I feel energised again!");
             } else {
-                player.sendMessage(ChatColor.DARK_RED + "/df-heal <player>");
+                player.sendMessage(ChatColor.WHITE + "/df-heal <player>");
             }
        }
         return true;
