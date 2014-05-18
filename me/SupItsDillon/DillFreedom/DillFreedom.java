@@ -8,9 +8,9 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 //Command imports
 import me.SupItsDillon.DillFreedom.Commands.Command_dffeed;
-import me.SupItsDillon.DillFreedom.Commands.Command_dfheal;
 import me.SupItsDillon.DillFreedom.Commands.Command_dfhelp;
 import me.SupItsDillon.DillFreedom.Commands.Command_dflol;
+import me.SupItsDillon.DillFreedom.Commands.Command_dfheal;
 
 public class DillFreedom extends BukkitPlugin {
 
