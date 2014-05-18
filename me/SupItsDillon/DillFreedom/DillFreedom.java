@@ -1,6 +1,5 @@
 package me.SupItsDillon.DillFreedom;
 
-
 import net.pravian.bukkitlib.BukkitLib;
 import net.pravian.bukkitlib.implementation.BukkitPlugin;
 import org.bukkit.plugin.PluginManager;
